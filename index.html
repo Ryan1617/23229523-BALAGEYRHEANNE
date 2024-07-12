@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Getting Lost</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div class="wrapper clearfix">
+			<div id="logo">
+				<a href="index.html"><img src="images/Rheanne Claire’s.png" rembg width=150 alt="LOGO"></a>
+			</div>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+				<li>
+					<a href="gallery.html">Gallery</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact Me</a>
+				</li>
+				<li>
+					<div class="search-container">
+						<form action="/action_page.php">
+						  <input type="text" placeholder="Search.." name="search">
+						  <button type="submit"><i class="fa fa-search"></i></button>
+						</form>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="adbox">
+			<div class="wrapper clearfix">
+				<div class="info">
+					<h1>Hello World.</h1>
+					<p>
+						Thanks for stopping by! This blog is all about the places I've been to so far, 
+						how life in Japan has been, and how beatiful they all look like in my eyes (well my camera's lenses actually).
+						Expect parks, beaches, sunsets, and citylights.
+						<br>So, feel free to explore and connect!
+					</p>
+				</div>
+			</div>
+		
+			<div class="highlight">
+				<h2>Beauty of life captured — <i>Photography</i></h2>
+			</div>
+		</div>
+		</div>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+		
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="images/img1.jpg" style="width:100%">
+			<div class="text">Ueno at Night</div>
+			</div>
+		
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="images/img2.jpg" style="width:100%">
+			<div class="text">Odaiba at Night</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="images/img3.jpg" style="width:100%">
+				<div class="text">Night Market at Yoyogi</div>
+				</div>
+
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+			
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+			
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+			
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+	</div>
+	<div id="footer">
+		<ul id="featured" class="wrapper clearfix">
+			<li>
+				<img src="images/food.jpg" alt="Img" height="204" width="220">
+				<h3><a href="blog.html">Food</a></h3>
+				<p>
+					As we all know, Japan is famous for it's food.
+					I still have a lot to try but here are my reccomendations so far.
+				</p>
+			</li>
+			<li>
+				<img src="images/Parks.jpg" alt="Img" height="204" width="220">
+				<h3><a href="blog.html">Parks</a></h3>
+				<p>
+					There are a lot of parks all around Japan.
+					Some may be not as famous as other but here some I reccomend.
+				</p>
+			</li>
+			<li>
+				<img src="images/Life.jpg" alt="Img" height="204" width="220">
+				<h3><a href="blog.html">Life</a></h3>
+				<p>
+					As perfect as other's might romanticize Japan, 
+					no place is really ever perfect, it all depends on how we adjust to things.
+				</p>
+			</li>
+			<li>
+				<img src="images/views.jpg" alt="Img" height="204" width="220">
+				<h3><a href="blog.html">Views</a></h3>
+				<p>
+					One undeniable thing there is Japan is the views. 
+					From greeny nature to cityscapes to historical vibes, you can find it. 
+				</p>
+			</li>
+		
+		</ul>
+		<div class="body">
+			<div class="wrapper clearfix">
+				<div id="links">
+					<div>
+						<h4>Social</h4>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/meowreay/" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a href="https://fb.watch/tgJExVsEM3/" target="_blank">Facebook</a>
+							</li>
+							<li>
+								<a href="https://youtu.be/dQw4w9WgXcQ?si=qfl1eKrMpY0EXglb" target="_blank">Youtube</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4>Recommended Spots</h4>
+						<ul>
+							<li>
+								<a href="ueno.html">Ueno Park</a>
+							</li>
+							<li>
+								<a href="kasai.html">Kasai-Rinkai Park</a>
+							</li>
+							<li>
+								<a href="yoyogi.html">Yoyogi Park</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<p class="footnote">
+					© Copyright © 2024.
+					<br>STUDENT ID: 23229523
+					<br>BALAG EY RHEANNE CLAIRE PULIG
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
